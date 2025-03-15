@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select e seus tipos</title>
+</head>
+<body>
+    <form onsubmit="" method="get">
+        <label>Nome:</label><input type="text" name="name"><br>
+        <label>Cargo:</label>
+        <select name="role" multiple> <!--multiple é para selecionar varios cargos-->
+            <option value="">Selecione o Cargo</option>
+            <option value="administração">Adiministração</option>
+            <option value="agropecuaria">Agropecuária</option>
+            <option value="advogado">Advogado</option>
+            <option value="juiz">Juíz</option>
+            <option selected value="tecnologia da informação">Tecnologia da Informação</option>
+        </select>
+        <label>Assunto:</label><input type="text" name="subject"><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

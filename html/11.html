@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldsets</title>
+    <style>
+        .row{
+            margin: 5px;
+        }
+        
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset{
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: gray;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="row"></div>
+            <label>Nome:</label><input type="text" />
+            <label>E-mail:</label><input type="text" />
+        </div>
+        <div class="row">
+            <label>Profissão:</label><input type="text" />
+            <label>Empresa:</label><input type="text" />
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Endereço</legend>
+    <div class="row">
+        <label>Endereço:</label><input type="text" />
+        <label>Número:</label><input style="width: 100px;" type="text" width="10" />
+    </div>
+    <div class="row">
+        <label>Bairro:</label><input type="text" />
+    <div class="row">
+        <label>Cidade/UF:</label><input type="text">
+    </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Contatos</legend>
+    <div class="row">
+        <label>Celular:</label><input type="text" />
+        <label>WhatsApp:</label><input type="text" />
+    </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Redes Sociais</legend>
+    <div class="row">
+        <label>Linkedin:</label><input type="text" />
+        <label>GitHub:</label><input type="text" />
+    </div>
+    </fieldset>
+
+    <div class="row">
+        <button type="reset">
+            Limpar
+        </button>
+        <button type="submit">
+            Enviar Formulário
+        </button>
+    </div>
+    </div>
+
+
+</body>
+</html>
