@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+    <link rel="shortcut icon" href="/html_site/imagens/Coala.ico" type="image/x-icon">
+</head>
+<body>
+    <h2>Campo de texto</h2>
+    <p>O tipo de entrada="texto" define um campo de entrada de texto de uma linha:</p>
+
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html">
+        <label for="fname">Primeiro Nome:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Sobrenome:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p>Observe que o formulário em si não é visível.</p>
+    <p>Observe também que a largura padrão de um campo de texto é de 20 caracteres.</p><hr>
+
+    <h2>Campo De Senha</h2>
+    <p>O <strong>tipo de entrada="password"</strong>define um campo de senha:</p>
+
+    <form action="http://127.0.0.1:5500/html_site/Exercicios/exe26.html">
+        
+        <label for="username">Nome do Usuario:</label><br>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="pwd">Senha:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <p>Os caracteres em um campo de senha são mascarados (mostrados como asteriscos ou círculos).</p><hr>
+
+    <h2>Botão Enviar</h2>
+    <p>O <strong>tipo de entrada="submit"</strong>define um botão para enviar dados de formulário para um manipulador de formulário:</p>
+
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html">
+        <label for="fname">Primeiro Nome:</label><br>
+        <input type="text" id="fname" name="fname" value="Giselle"><br>
+
+        <label for="lname">Sobre nome:</label><br>
+        <input type="text" id="lname" name="lname" value="Santos"><br><br>
+        
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p>Se você clicar em "Enviar", os dados do formulário serão enviados para uma página chamada "/action_page.php".</p><hr>
+
+    
+    <h2>Botão de reinicialização</h2>
+    <p>O<strong>tipo de entrada="reset"</strong>define um botão de redefinição que redefine todos os valores do formulário para seus valores padrão:</p>
+    
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    
+    <P>Se você alterar os valores de entrada e clicar no botão "Redefinir", os dados do formulário serão redefinidos para os valores padrão.</P><hr>
+
+    <h2>Botões de rádio</h2>
+    <p>O <strong>tipo de entrada="radio"</strong>define um botão de opção:</p>
+    <h3>Escolha seu idioma favorito da Web:</h3>
+    
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html?fname=John&lname=Doe">
+        
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br><br>
+
+        <input type="submit" value="Enviar">
+        
+    </form><hr>
+
+    <h2>Caixas de seleção</h2>
+    <p>O <strong>tipo de entrada="checkbox" </strong>define uma caixa de seleção:</p>
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">Eu Tenho Motocicleta</label><br>
+        
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">Eu tenho Carro</label><br>
+        
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Eu tenho Avião</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form><hr>
+
+    <h2>Botão de entrada</h2>
+
+    <input type="button" onclick="alert('Olá Devs!')" value="Clique aqui!"><hr>
+
+
+    <h2>Mostrar um seletor de cores</h2>
+    <p>O <strong>tipo de entrada="color" </strong> é usado para campos de entrada que devem conter uma cor.</p>
+
+    <form action="">
+        <label for="favcolor">Selecione sua cor favorita:</label>
+        <input type="color" id="favcolor" name="favcolor"><br>
+
+        <input type="submit" value="Enviar">
+
+        <p><b>Nota:</b> type="color" não é suportado no Internet Explorer 11.</p>
+    </form><hr>
+
+    <h2>Campo de Data</h2>
+    <p>O <strong>tipo de entrada="data"</strong>é usado para campos de entrada que devem conter uma data.</p>
+
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html?favcolor=%23401212">
+        <label for="aniversário">Aniversário:</label>
+        <input type="date" id="aniversário" name="aniversário">
+        <input type="submit" value="Enviar">
+    </form>
+
+      <p><strong>Observação:</strong>type="date" não é suportado no Internet Explorer 11.</p><hr>
+
+      <h2>Restrições de campo de data</h2>
+
+    <p>Use os atributos min e max para adicionar restrições às datas:</p>
+
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html?anivers%C3%A1rio=2025-02-28">
+        <label for="datemin">Insira uma data posterior a 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+        <label for="datemax">Insira uma data anterior a 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p><strong>Observação:</strong> type="date" não é suportado no Internet Explorer 11.</p><hr>
+
+    <h2>Campo de data local</h2>
+    <p>O <strong>tipo de entrada="datetime-local"</strong>especifica um campo de entrada de data e hora, sem fuso horário.</p>
+
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html">
+        <label for="birthdaytime">Aniversário (data e hora):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <input type="submit" value="Enviar">
+    </form><hr>
+
+    <h2>Campo de e-mail</h2>
+
+    <p>O <strong>input type="email"</strong>é usado para campos de entrada que devem conter um endereço de e-mail:</p>
+
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html?birthdaytime=2025-11-29T00%3A00">
+        <label for="email">Insira seu e-mail: </label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Enviar">
+    </form><hr>
+
+    <h1>Upload de arquivo</h1>
+
+    <p>Exiba um campo de seleção de arquivo que permite que um arquivo seja escolhido para upload:</p>
+    
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html?email=giselleandrade1996%40gmail.com">
+        <label for="myfile">Selecione um arquivo:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <input type="submit" value="Enviar arquivo">
+    </form><hr>
+
+    
+    <h1>Um campo oculto (veja no código fonte)</h1>
+
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html">
+        <label for="fname">Primeiro nome:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p><strong>Observação:</strong>  o campo oculto não é mostrado ao usuário, mas os dados são enviados quando o formulário é enviado.</p><hr>
+
+    
+
+    <h2>Campo do mês</h2>
+    <p>O <strong>input type="month"</strong> permite que o usuário selecione um mês e um ano.</p>
+    
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html">
+        <label for="bdaymonth">Aniversário(Mês e Ano):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <p><strong>Observação:</strong> type="month"  não é compatível com Firefox, Safari ou Internet Explorer 11.</p><hr>
+
+    
+    <h2>Campo Numérico</h2>
+
+    <p>O<strong>input type="number"</strong>define um campo de entrada numérico.</p>
+
+    <p>Você pode usar os atributos min e max para adicionar restrições numéricas no campo de entrada:</p>
+
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html">
+        <label for="quantity">Quantidade (entre 1 e 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Passos numéricos</h2>
+    <p>Dependendo do suporte do navegador: etapas fixas serão aplicadas no campo de entrada.</p>
+
+    <form action="http://127.0.0.1:5500/html_site/Formul%C3%A1rios%20HTML/Exe03.html">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+        <input type="submit" value="Enviar">
+    </form><hr>
+
+    <h2>Campo de alcance</h2>
+    <p>Dependendo do suporte do navegador: O tipo de entrada "intervalo" pode ser exibido como um controle deslizante.</p>
+
+    <form action="/action_page.php" method="get">
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+        <input type="submit" value="Enviar">
+    </form>
+      
+</body>
+</html>

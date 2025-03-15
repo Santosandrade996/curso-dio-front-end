@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela HTML</title>
+    <link rel="shortcut icon" href="/html_site/imagens/Coala.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Círculo SVG</h1>
+    
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"
+        stroke="green" stroke-width="4" fill="yellow" />
+      Sorry, your browser does not support inline SVG.
+    </svg><hr>
+
+      <h1>Retângulo SVG</h1>
+
+      <svg width="400" height="120">
+        <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue"/>
+      </svg><hr>
+        
+      <h1>Retângulo SVG com opacidade e cantos arredondados</h1>
+    
+        <svg width="400" height="180">
+            <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+            style="fill:rgb(235, 8, 8);stroke:black;stroke-width:5;opacity:0.5" />
+    
+        </svg><hr>
+
+        <h1>Estrela SVG</h1>
+
+        <svg width="300" height="200">
+            <polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+          Sorry, your browser does not support inline SVG.
+        </svg><hr>
+
+        <h1>Elipse e texto de gradiente SVG</h1>
+
+        <svg height="130" width="500">
+            <defs>
+              <linearGradient id="grad1">
+                <stop offset="0%" stop-color="yellow" />
+                <stop offset="100%" stop-color="red" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+            <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+            
+        </svg>
+
+</body>
+</html>

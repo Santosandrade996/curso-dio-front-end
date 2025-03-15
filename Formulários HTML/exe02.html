@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+    <link rel="Icon" href="/html_site/imagens/Coala.ico">
+</head>
+<body>
+    <h2>O elemento de entrada</h2>
+    <form action="http://127.0.0.1:5500/Formul%C3%A1rios%20HTML/Exe02.html"></form>
+    <label for="fname">Primeiro nome:</label><br>
+    <input type="text" id="fname" name="fname"><br><br>
+    <input type="submit" value="Enviar"><hr>
+
+
+    <h2>O elemento selecionado</h2>
+    <p>O elemento select define uma lista suspensa:</p>
+    
+    <form action="">
+        <label for="Cars">Escolha uma marca de carro:</label>
+        <select name="Carros" id="Carros">
+            <option value="Volvo">Volvo</option>
+            <option value="Alfa Romeo">Alfa Romeo</option>
+            <option value="Audi" selected>Audi</option> */opção pré-selecionada*/
+            <option value="Maserati">Maserati</option>
+        </select>
+        <input type="submit">
+    </form><hr>
+
+    <h2>Valores de opções visíveis</h2>
+    <p>Usando o atributo size para especificar um número de valores visíveis.</p>
+    
+    <form action="">
+        <label for="cars">Escolha um carro:</label>
+        <select name="Carros" id="cars" size="3">
+            <option value="Audi">Audi</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Maserati">Maserati</option>
+            <option value="Alfa Romeo">Alfa Romeo</option>
+        </select><br><br>
+        <input type="submit">
+    </form><hr>
+
+    <h2>Permitir Seleções Múltiplas</h2>
+    <p>Use o atributo multiple para permitir que o usuário selecione mais de um valor.</p>
+
+    <form action="http://127.0.0.1:5500/Formul%C3%A1rios%20HTML/Exe02.html?Carros=Alfa+Romeo">
+        <label for="carros">Escolha um dos carros:</label>
+        <select name="carros" id="carros" size="4" multiple>
+            <option value="Maserati">Maserati</option>
+            <option value="Alfa Romeo">Alfa Romeo</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Audi">Audi</option>
+        </select><br><br>
+        <input type="submit">
+    </form>
+
+    <p>Mantenha pressionado o botão Ctrl (Windows) / Command (Mac) para selecionar várias opções.</p><hr>
+
+    <h2></h2>
+    <p></p>
+
+    <form action="http://127.0.0.1:5500/Formul%C3%A1rios%20HTML/Exe02.html?Carros=Alfa+Romeo">
+        <textarea name="mensagem" id="" rows="10" cols="30">O gato estava brincando no jardim...</textarea><br><br>
+        <input type="submit">
+    </form><hr>
+
+    <h2>O elemento botão</h2>
+    <button type="button" onclick="alert('Olá, Mundo!')">Clique aqui!</button><hr>
+
+    <h2>Agrupando dados de formulário com Fieldset</h2>
+    <p>O elemento fieldset é usado para agrupar dados relacionados em um formulário, e o elemento legend define uma legenda para o elemento fieldset.</p>
+
+    <form action="http://127.0.0.1:5500/Formul%C3%A1rios%20HTML/Exe02.html?Carros=Alfa+Romeo">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">Primeiro nome:</label><br>
+            <input type="text" id="fname" name="fname" value="Jhon"><br>
+            <label for="lname">Sobrenome:</label><br>
+            <input type="text" id="lanme" name="lname" value="Doce de Leite"><br><br>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form><hr>
+
+    <h2>O elemento datalist</h2>
+    <p>O elemento datalist especifica uma lista de opções predefinidas para um elemento de entrada.</p>
+
+    <form action="http://127.0.0.1:5500/Formul%C3%A1rios%20HTML/Exe02.html?Carros=Alfa+Romeo">
+        <input list="browsers" name="brouser">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
+    </form><hr>
+
+    <h2>O elemento de saída</h2>
+    <p>O elemento de saída representa o resultado de um cálculo.</p>
+
+    <form action="http://127.0.0.1:5500/Formul%C3%A1rios%20HTML/Exe02.html?Carros=Alfa+Romeo" oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" name="a" value="50">100 +
+        <input type="number" id="b" name="b" value="50"> =
+        <output name="x" for="a b"></output><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

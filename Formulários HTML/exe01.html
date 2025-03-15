@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+    <link rel="Icon" href="/html_site/imagens/Coala.ico">
+</head>
+<body>
+    <h2></h2>
+    <form>
+        <label for="fname">Primeiro nome:</label><br>
+        <input type="text" id="fname"  name="fname" value="Giselle"><br>
+        <label for="lname">Sobrenome:</label><br>
+        <input type="text" id="lname" name="laname" value="Santos">
+
+        <p>Observe que o formulário em si não é visível.</p>
+        <p>Observe também que a largura padrão dos campos de entrada de texto é de 20 caracteres.</p><hr>
+
+        <h2>Botões de rádio</h2>
+        <p>Escolha um idioma que você desenvolveu:</p>
+
+        <form >
+            <input type="radio" id="ruby" name="fav_language" value="HTML">
+            <label for="ruby">Ruby</label><br>
+            
+            <input type="radio" id="c#" name="fav_language" value="CSS">
+            <label for="c#">C#</label><br>
+            
+            <input type="radio" id="assembly" name="fav_language" value="Assembly">
+            <label for="assembly">Assembly</label>
+        </form><hr>
+
+        
+        <h2>Caixas de seleção</h2>
+        <p><strong>O tipo de entrada="checkbox" </strong>define uma caixa de seleção:</p>
+
+        <form action="/action_page.php">
+           <input type="checkbox" id="veículo1" name="veículo1" value="Bicicleta"> 
+           <label for="veículo1">Eu tenho uma Bicicleta</label><br>
+           
+           <input type="checkbox" id="veículo2" name="veículo2" value="Avião">
+           <label for="veículo2">Eu tenho um avião</label><br>
+
+           <input type="checkbox" id="veículo3" name="veículo3" value="Moto">
+           <label for="veículo3">Eu tenho uma moto</label><br><br>
+           <input type="submit" value="Enviar">
+        </form><hr>
+
+        <form action="/Formulários HTML/Exe01.html">
+            <label for="fname">Primeiro Nome:</label><br>
+            <input type="text" id="fname" name="fname" value=" "><br>
+
+            <label for="lname">Sobrenome:</label><br>
+            <input type="text" id="lname" name="lname" value=" "><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Se você clicar no botão "Enviar", os dados do formulário serão enviados para uma página chamada "/action_page.php".</p><hr>
+
+        
+        <h2>O nome Atributo</h2>
+
+        <form action="/Formulários HTML/Exe01.html">
+            <label for="fname">Primeiro nome:</label><br>
+            <input type="text" id="fname" value="Giselle"><br><br>
+            <input type="submit" value="Enviar">
+        </form> 
+
+        <P>Se você clicar no botão "Enviar", os dados do formulário serão enviados para uma página chamada "/Formulários HTML/Exe01.html".</P>
+        
+        <P>Observe que o valor do campo "Nome" não será enviado, porque o elemento de entrada não tem um atributo de nome.</P>
+    </form>
+</body>
+</html>
