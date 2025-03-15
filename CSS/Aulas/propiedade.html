@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedade object-fit</title>
+    <link rel="shortcut icon" href="/html_site/imagens/Coala.ico" type="image/x-icon">
+
+    <style>
+
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #contain {
+            object-fit: contain;
+        }
+
+        #cover{
+            object-fit: cover;
+        }
+
+        #none {
+            object-fit: none;
+        }
+
+        #scale-down {
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propiedade <code> object-fit </code></h1>
+    
+    <code>object-fit: fill;</code> (padrão) <br>
+    <div>
+        <img src="/html_site/imagens/CSS3.jpg" alt="Logo do CSS3" id="fill">
+    </div>
+    <br>
+    
+    <code>object-fit: contain;</code>
+    <div>
+        <img src="/html_site/imagens/CSS3.jpg"alt="Logoavatar" id="contain">
+    </div>
+
+    <code>object-fit: cover;</code>
+    <div>
+        <img src="/html_site/imagens/CSS3.jpg"alt="Logoavatar" id="cover">
+    </div>
+
+    <code>object-fit: none;</code>
+    <div>
+        <img src="/html_site/imagens/CSS3.jpg"alt="Logoavatar" id="none">
+    </div>
+
+    <code>object-fit: scale-down;</code>
+    <div>
+        <img src="/html_site/imagens/CSS3.jpg"alt="Logoavatar" id="scale-down">
+    </div>
+   
+   
+</body>
+</html>
