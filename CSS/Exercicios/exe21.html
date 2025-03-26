@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplos de float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(214, 212, 212);
+        }
+
+        .header, .footer {
+            background-color: black;
+            color: whitesmoke;
+            padding: 15px;
+        }
+
+        .column {
+            float: left;
+            padding: 15px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .menu {
+            width: 25%;
+
+        }
+
+        .content {
+            width: 75%;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color:powderblue;
+            color: black;
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Liechtenstein</h1>
+    </div>
+
+    <div class="clearfix">
+        <div class="column menu">
+            <ul>
+                <li>Etimologia</li>
+                <li>História</li>
+                <li>Geografia</li>
+                <li>Demografia</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <h1>História</h1>
+            <p>Achados arqueológicos apontam que o território hoje conhecido como Liechtenstein é habitado desde o Neolítico (quinto milênio a.C.). Enquanto o fluxo livre do rio Reno dificultava o assentamento, os primeiros assentamentos se formaram nas elevações do vale, como pode ser visto na colina do castelo de Gutenberg, em Balzers, ou em Eschnerberg. No ano 15 a.C., os romanos, sob comando de Augusto, conquistaram o território da Récia e estabeleceram a província romana de Récia. No século I d.C., foi construída a estrada militar Milão-Bregenz, que corria ao longo da margem direita do Reno através da passagem de Luzisteig e, por isso, propriedades e fortes na área do atual Principado de Liechtenstein foram construídos.[27]</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Texto do rodapé</p>
+    </div>
+</body>
+</html>
