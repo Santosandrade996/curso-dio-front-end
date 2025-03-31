@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        input[type="text"], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #09005e;
+            color: whitesmoke;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #020f85;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #afaeae;
+            padding: 20px;
+        }
+            
+    </style>
+</head>
+<body>
+    <h3>Usando CSS para estilizar um formulário HTML</h3>
+
+    <div>
+        <form action="http://127.0.0.1:5500/html_site/CSS/Exercicios/exe29.html">
+            <label for="fname">Primeiro Nome</label>
+            <input type="text" id="lname" name="lastname" placeholder="Seu nome..">
+
+            <label for="lname">Sobrenome</label>
+            <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
+
+            <label for="country">País</label>
+            <select name="country" id="país">
+                <option value="australia">Austrália</option>
+                <option value="canada">Canadá</option>
+                <option value="londres">Londres</option>
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
