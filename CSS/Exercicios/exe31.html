@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação de entrada de pesquisa</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+       input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url(/html_site/CSS/img/procurar.svg);
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out; /* Animação suave para a largura */
+        }
+       
+        input[type=text]:focus {
+            width: 300px; /* Aumenta a largura ao focar */
+        }
+    </style>
+</head>
+<body>
+    <h2>Animar a largura da entrada de pesquisa</h2>
+
+    <form>
+        <input type="text" name="search" placeholder="Pesquisar...">
+    </form>
+</body>
+</html>
