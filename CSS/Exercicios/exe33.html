@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando o formulário</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical
+
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: whitesmoke;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="http://127.0.0.1:5500/html_site/CSS/Exercicios/exe33.0.html">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Primeiro Nome</label>
+                </div>
+                
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Sobre Nome</label>
+                </div>
+                
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Seu Sobrenome..">
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">País</label>
+                </div>
+                
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">Austrália</option>
+                        <option value="canada">Canadá</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+       
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Assunto</label>
+                </div>
+               
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Escreva alguma coisa.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <br>
+       
+            <div class="row">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+      
+</body>
+</html>
