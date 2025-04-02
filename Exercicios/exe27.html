@@ -1,0 +1,39 @@
+<!--Mapas de imagens-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   
+</head>
+<body>
+    <h2>Mapas de imagem</h2>
+    <p>Clique no computador para ir para uma nova guia de pagina para saber sobre o topico</p>
+
+    <img src="/imagens/computador.jpg" alt="Imagem de um laptop" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="https://pt.wikipedia.org/wiki/Computador" alt="computer">
+        <area shape="rect" coords="290,172,333,250" href="https://pt.wikipedia.org/wiki/Telefone_celular" alt="Phone">
+        <area shape="circle" coords="337,300,44" href="https://www.petz.com.br/blog/plantas/como-plantar-jade/" alt="Plantas verdes"><hr>
+        <P>Clique no croissant para ir para uma nova página e ler mais sobre o tópico:</P>
+        <img src="/imagens/frenchfood.jpg" alt="Fren">
+
+        <map name="foodmap">
+            <area shape="poli" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm" alt="croissant">
+        </map><hr>
+    </map>
+       
+    <h2>Mapa de Imagem em JavaScript</h2>
+        <p>Clique na xícara de café para executar uma função JavaScript</p>
+
+        <img src="/imagens/xicara.jpg" alt="Xicara de café" usemap="#workmap" width="400" height="379">
+
+        <map name="workmap">
+            <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+        </map>
+        <script>
+            function myFunction() {
+                alert("Clique na xicara de cafe!")
+            }
+        </script>
+</body>
+</html>

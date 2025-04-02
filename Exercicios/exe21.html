@@ -1,0 +1,87 @@
+<!--Links em HTML-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+</head>
+<body>
+    <h1>Links HTML</h1>
+    <h2>Hiperlinks</h2>
+    <p>Links são hiperlinks. você pode clicar em um link e pular para outro documento</p>
+    <p>Quando você move o mouse sobre um link, a seta do mouse se transforma em uma pequena mão.</p><hr>
+    
+    <h1>Sintaxe</h1>
+    <p>a tag a define um hyperlink. ela tem a seguinte sintaxe: a href"url" link text /a></p>
+    <p>Exemplo... <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools">Visite W3School.com</a></p><hr>
+
+    <h2>Por padrão</h2>
+    <p>Os links aparecerão da seguinte forma em todos os navegadores:</p>
+    <p>
+        <ul>
+            <li>Um link não visitado é sublinhado de azul</li>
+            <li>Um link visitado é sublinhado e roxo</li>
+            <li>Um link ativo é sublinhado e vermelho</li>
+        </ul>
+    </p><hr>
+    <h3>Por padrão, a pagina da vinculada será exibida na janela atual do navegador. para alterar isso, você deve especificar outro alvo para link.</h3>
+    <p>O target especifica onde abrir o documento vinculado.</p>
+    <p>O target atributo pode ter um dos seguintes valores:</p>
+    <p>
+        <ul>
+            <li>_self- Padrão. Abre o documento na mesma janela/guia em que foi clicado</li>
+            <li>_blank= abre o documento em uma nova janela ou aba</li>
+            <li>_parent- abre o documento no quadro pai</li>
+            <li>_top- Abre o documento no corpo inteiro da janela</li>
+        </ul>
+    </p> <hr>
+
+    <h2>O atributo alvo</h2>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target">Visite W3Schools!</a>
+
+    <p>https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools</p><hr>
+
+    <h1>URLs absolutas vs. URLs relativas</h1>
+    <p>Ambos os exemplos acima estão usando uma URL absoluta (um endereço da web completo) no hrefatributo. <br>
+
+        Um link local (um link para uma página dentro do mesmo site) é especificado com uma URL relativa (sem a parte "https://www"):</p><br>
+
+        <h2>URLs absolutas</h2>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links" target="_blank">W3C</a><br>
+
+            <a href="https://www.google.com/search?q=google+scholar&rlz=1C1CHZN_pt-BRBR1067BR1067&oq=google&gs_lcrp=EgZjaHJvbWUqDggCEEUYJxg7GIAEGIoFMgcIABAAGI8CMhgIARAuGEMYgwEYxwEYsQMY0QMYgAQYigUyDggCEEUYJxg7GIAEGIoFMggIAxBFGCcYOzISCAQQABhDGIMBGLEDGIAEGIoFMg8IBRAAGEMYsQMYgAQYigUyDAgGEAAYQxiABBiKBTIHCAcQABiPAjIHCAgQABiPAtIBCTM2MzlqMGoxNagCCLACAQ&sourceid=chrome&ie=UTF-8" target="_blank">Google</a>
+        </p>
+       
+        <h2>URLs relativas</h2>
+        <p><a href="http://127.0.0.1:5500/Exercicios/exe13.html">Aula sobre imagem</a><br>
+
+            <a href="/css/default.asp">Tutorial CSS</a>
+        </p><hr>
+         <h2>Use uma imagem como um link img dentro da a tag</h2>
+         <p>A imagem abaixo é um link. Tente clicar nele</p>
+         <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image"><img src="animado.png" alt="tutorial de html" style="width:42px;height:42px;"></a><hr>
+
+         <h2>Link para um endereço de e-mail</h2>
+         <p>Para criar um link que seja aberto no programa de e-mail do usuário (para permitir que ele envie um novo e-mail), use mailto: dentro do atributo href:</p>
+
+         <p><a href="mailto:https://mail.google.com/mail/u/0/">Enviar e-mail</a></p><hr>
+          
+         <h2>Botão como um Links</h2>
+         <p>Clique no botão para ir para o tutorial HTML.</p>
+         <button onclick="document.location='default.asp'">Como por o botão em links</button> <hr>
+
+         <h2>Títulos de Links</h2>
+         <p>O atributo title especifica informações extras sobre um elemento. As informações são mais frequentemente mostradas como um texto de dica de ferramenta quando o mouse se move sobre o elemento.</p>
+         <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_title" title="Ir para a seção HTML da plataforma W3Schools">Visite o tutorial</a><hr>
+         <h2>Caminhos externos</h2>
+         <p>Este exemplo usa um URL completo para criar um link para uma página da web:</p>
+         <p><a href="https://www.w3schools.com/html/default.asp">Visite</a></p> <br>
+
+         <p>Este exemplo vincula a uma página localizada na pasta html no site atual:</p>
+         <p><a href="/html/default.asp">Tutorial</a></p><br>
+
+         <p>Este exemplo vincula a uma página localizada na mesma pasta da página atual:</p>
+         <p><a href="default.asp">Tutorial em html</a></p>
+
+
+</body>
+</html>

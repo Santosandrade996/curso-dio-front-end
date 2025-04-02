@@ -1,0 +1,58 @@
+<!--Atributos de altura e largura-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        /*Este estilo define a largura de todas as imagens para 100%*/
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Atributos de largura /altura ou estilo?</h2>
+    <p>A primeira imagem usa o atributo width(Definido como 128 pixels), mas o estilo na seção head o sbstitui e define a largura como 100%</p>
+    <img src="Html 5.png" alt="Ícone de HTML5" width="128" height="128">
+
+    <p>A segunda imagem usa o tributo style para definir a largura para 128 pixels, isso não será substituido pelo estilo na seção head</p>
+    <img src= "Html 5.png" alt="HTML5 Icone" style="width:128px;height:128px;"><hr>
+
+    <h2>Imagens de outra pasta</h2>
+    <p>É comum armazenar imagens em uma subpast.Você deve então incluir o nome da pasta no atributo src</p>
+    <img src="/imagens/escadas.jpg" alt="Imagem de escadas" style="width: 100px; height: 200px;"><hr>
+
+    <h2>Imagens de servidor e site</h2>
+    <img src = "https://www.w3schools.com/images/w3schools_green.jpg" alt = "W3Schools.com" style = "width:104px;height:142px;"><hr>
+
+    <h2>Imagens animadas</h2>
+    <p>HTML permite imagens em movimento:</p>
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWF4MGUzOTM2bnkycXhqaXY4OGRtYmJvZnRpcnNvd2k1Mnlqb2dvciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HeqVzyiJbb7txS0/giphy.gif" alt="Homem fazendo um coração" style="width: 200px;height:200px;"><hr>
+
+    <h2>Imagem com link</h2>
+    <p>A imagem é um link. Você pode clicar nela.</p>
+    <a href="https://www.w3schools.com/Html/">
+        <img src="animado.png" alt="Tutorial html" style="width: 70px;height: 70px;"> </a><hr>
+
+        <h2>Imagens flutuantes</h2>
+        
+        <p><strong>Flutuar a imagem para a direita:</strong></p>
+        
+        <p>
+            <img src="animado.png" alt="smiley face" style="float:right; width: 70px;height:70px;">
+            
+            Um parágrafo com uma imagem flutuante. Um parágrafo com uma imagem flutuante. Um parágrafo com uma imagem flutuante.
+        </p>
+
+        <p><strong>Flutuar imagem para esquerda</strong></p>
+
+        <p>
+            <img src="animado.png" alt="cara sorridente" style="float: left; width: 70px; height: 70px;">
+           
+            Um parágrafo com uma imagem flutuante. Um parágrafo com uma imagem flutuante. Um parágrafo com uma imagem flutuante.
+        </p>
+
+
+
+</body>
+</html>

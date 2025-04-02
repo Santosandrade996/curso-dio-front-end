@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+</head>
+<body>
+    <h2>O elemento da imagem</h2>
+    <picture>
+        <source media="(min-width: 650px)" srcset="arvore.jpg">
+        <source media="(min-width: 465px)" srcset="homem.jpg">
+        <img src="Alpha Romeo.jpg" alt="Carro alpha romeo"
+        style="width:auto;">
+    </picture>
+
+    <p>Redimensione o navegador para ver diferentes versões da imagem carregando em diferentes tamanhos de viewport. O navegador procura o primeiro elemento de origem onde a media query corresponde à largura atual da viewport do usuário e busca a imagem especificada no atributo srcset.
+
+        O elemento img é necessário como a última tag filha do bloco de declaração de imagem. O elemento img é usado para fornecer compatibilidade com versões anteriores para navegadores que não suportam o elemento de imagem, ou se nenhuma das tags de origem correspondeu.</p>
+</body>
+</html>
