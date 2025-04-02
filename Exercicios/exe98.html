@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Aprendendo HTML</title>
+      <link rel="Icon" href="/imagens/Coala.ico">
+  </head>
+  <body>
+    <h1>Meu Primeiro JavaScript</h1>
+    <p>Aqui, um JavaScript altera o valor do atributo src (fonte) de uma imagem.</p>
+
+      <script>
+          function light(sw) {
+            var pic;
+            if (sw == 1) {
+              pic = "pic_bulbon.gif"
+            } else {
+              pic = "pic_bulboff.gif"
+            }
+            document.getElementById('myImage').src = pic;
+          }
+      </script>
+          
+    <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+      
+    <p>
+      <button type="button" onclick="light(1)">Light On</button>
+      <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+  </body>
+</html>

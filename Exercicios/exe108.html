@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox CSS</title>
+    <link rel="Icon" href="/imagens/Coala.ico">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #aa4242;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+        nav {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background-color: #dda6a6;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #ffeaea79;
+            padding: 10px;
+        }
+        footer {
+            background-color: #aa4242;
+            padding: 10px;
+            text-align: center;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Layout CSS Flexbox</h1>
+    <p>Neste exemplo, criamos um cabeçalho, duas colunas/caixas e um rodapé. Em telas menores, as colunas serão empilhadas uma sobre a outra.</p>
+    <p>Redimensione a janela do navegador para ver o efeito responsivo.</p>
+
+    <header>
+        <h2>Cidades</h2>
+    </header>
+   
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Tóquio</a></li>
+                <li><a href="#">Londres</a></li>
+                <li><a href="#">Paris</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Tóquio</h1>
+            <p>Tóquio, capital do Japão, é conhecida por ser a metrópole mais populosa do mundo. Repleta de bairros turísticos, templos e parques, atrai milhares de turistas o ano todo.</p>
+            <p>Tóquio é a capital do Japão e sede do governo nacional. É considerada uma das maiores metrópoles do planeta e também o centro político, econômico, educacional e cultural do Japão. A metrópole representa uma das áreas de maior aglomeração urbana do mundo. A metrópole é constituída por 23 bairros, 26 municípios adicionais e as ilhas Izu e Ogasawara.</p>
+        </article>
+    </section>
+    
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+</body>
+</html>

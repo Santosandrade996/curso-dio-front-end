@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML</title>
+    <link rel="Icon" href="/imagens/Coala.ico">
+</head>
+<body>
+    <h2>Uso do atributo class em JavaScript</h2>
+    <p>Clique no botão para ocultar todos os elementos com nome de classe "Cidade"</p>
+    <button onclick="myFunction()">Ocultar elementos</button>
+    <h2 class="city">Londres</h2>
+    <p>Londres é a capital da Inglaterra.</p>
+    
+    <h2 class="city">Paris</h2>
+    <p>Paris é a capital da França.</p>
+    
+    <h2 class="city">Tóquio</h2>
+    <p>Tóquio é a capital do Japão.</p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>

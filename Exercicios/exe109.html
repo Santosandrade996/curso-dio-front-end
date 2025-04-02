@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML</title>
+    <link rel="Icon" href="/imagens/Coala.ico">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+       
+        .menu {
+            float: left;
+            width: 20%;
+        }
+
+        .menuitem {
+            padding: 8px;
+            margin-top: 7px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        .right {
+            background-color: lightblue;
+            float: left;
+            width: 20%;
+            padding: 10px 15px;
+            margin-top: 7px;
+        }
+
+        @media only screen and (max-width:800px) {
+            /* For tablets: */
+            .main {
+              width: 80%;
+              padding: 0;
+            }
+            .right {
+              width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+              width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body style="font-family: Verdana;">
+    
+    <div style="background-color: #929191; padding:15px">
+        <h1>Cânions do Xingó-Alagoas/Sergipe</h1>
+        <h3>Redimensionar a janela do navegador</h3>
+    </div>
+
+    <div style="overflow: auto;">
+         <div class="menu">
+            <div class="menuitem">A caminhada</div>
+            <div class="menuitem">Transporte</div>
+            <div class="menuitem">Histórico</div>
+            <div class="menuitem">Galeria</div>
+    </div>
+    
+    <div class="main">
+        <h2>A caminhada</h2>
+        <p>O passeio até o Cânion do Xingó geralmente é realizado a partir de Canindé de São Francisco.</p>
+        <img src="/imagens/canions de xingo.jpg" alt="Rio São francisco" style="width: 100%;">
+    </div>
+    
+    <div class="right">
+        <h2>O que é?</h2>
+        <p>Um dos destinos mais visitados do Sergipe está a cerca de três horas de Aracaju: a Região do Xingó. Ali, o grande atrativo é o Cânion do Xingó, uma formação exuberante em meio às águas do Rio São Francisco</p>
+
+        <h2>Onde?</h2>
+        <p>Brazil</p>
+        
+        <h2>Preço</h2>
+        <p>Caminhada Gratuita!</p>
+    </div>
+    </div>
+
+    <div style="background-color: #929191; text-align:center; padding: 10px; margin-top:7px; font: size 12px;">
+        Essa página só é uma demonstração de design!
+    </div>
+</body>
+</html>

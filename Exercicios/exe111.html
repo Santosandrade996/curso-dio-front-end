@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML</title>
+    <link rel="Icon" href="/imagens/Coala.ico">
+</head>
+<body>
+    <h2>Mostrar imagens diferentes dependendo da largura do navegador</h2>
+    <p>Redimensione a largura do navegador e a imagem mudará em 600px e 1500px.</p>
+   <picture>
+        <source srcset="arvore.jpg" media="(max-width: 600px)">
+        <source srcset="pessoas.jpg" media="(max-width 1500px)">
+        <source srcset="homem.jpg">
+        <img src="pessoas.jpg" alt="Foto natal" style="width: auto;">
+   </picture><hr>
+
+   <h1 style="font-size: 10vw;">Texto responsivo</h1>
+   
+   <p style="font-size: 5vw;">Redimensione a janela do navegador para ver como o tamanho do texto é dimensionado.</p>
+   
+   <p style="font-size: 5vw;">Use a unidade "vw" ao dimensionar o texto. 10vw definirá o tamanho para 10% da largura da janela de visualização.</p>
+   
+   <p>Viewport é o tamanho da janela do navegador. 1vw = 1% da largura do viewport. Se o viewport tiver 50 cm de largura, 1vw é 0,5 cm.</p>
+</body>
+</html>

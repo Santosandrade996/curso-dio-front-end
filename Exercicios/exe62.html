@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML</title>
+    <link rel="Icon" href="/imagens/Coala.ico">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h2>Célula que abrange duas colunas</h2>
+    <p>Para fazer com que uma célula abranja mais de uma coluna, use o atributo colspan.</p>
+    <table style="width: 100%;">
+        <tr>
+            <th colspan="2">Nome/Sobrenome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>Eva</td>
+            <td>Jackson</td>
+            <td>57</td>
+        </tr>
+    </table><hr>
+    <h2>Célula que abrange duas linhas</h2>
+    <p>Para fazer com que uma célula abranja mais de uma linha, use o atributo rowspan.</p>
+    <table style="width: 100%;">
+        <tr>
+            <th>Nome</th>
+            <td>Jill</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefone</th>
+            <td>5521965342564</td>
+        </tr>
+        <tr>
+            <td>5521998635467</td>
+        </tr>
+    </table>
+</body>
+</html>

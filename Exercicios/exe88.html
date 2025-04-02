@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML</title>
+    <link rel="Icon" href="/imagens/Coala.ico">
+    <style>
+        .city{
+            background-color: rgb(221, 122, 122);
+            color: black;
+            padding: 10px;
+        }
+        .main {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Várias classes</h2>
+    <p>Aqui, todos os três elementos h2 pertencem à classe "city". Além disso, London também pertence à classe "main", que centraliza o texto.</p>
+    <h2 class="city main">Londres</h2>
+    <h2 class="city">Paris</h2>
+    <h2 class="city">Tóquio</h2><hr>
+    
+    <h2>Elementos diferentes podem compartilhar a mesma classe</h2>
+    <p>Mesmo que os dois elementos não tenham o mesmo nome de tag, ambos podem apontar para a mesma classe e obter o mesmo estilo CSS:</p>
+    <h2 class="city">Paris</h2>
+    <p class="city">Paris é a capital da França.</p>
+</body>
+</html>

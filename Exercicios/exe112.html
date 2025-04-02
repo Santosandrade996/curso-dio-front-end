@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML</title>
+    <link rel="Icon" href="/html_site/imagens/Coala.ico">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .left {
+            background-color: #2196f3;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+
+        .main {
+            background-color: beige;
+            padding: 20px;
+            float: left;
+            width: 60%; /*60% é largura padrão*/
+        }
+        .right {
+            background-color: #04aa6d;
+            padding: 20px;
+            float: left;
+            width: 20%; /*20% de largura é padrão*/
+        }
+
+        @media screen and (max-width: 800px) /*Utilize uma consulta de media para adicionar ponto de interrupção de 800px*/{
+           .left, .main, .right {
+            width: 100%; /*A largura é 100%, porque o viewport é 800px ou menor...*/
+           }
+        }
+    </style>
+</head>
+<body>
+    <h2>Consultas de mídia</h2>
+    <p>Redimensione a janela do navegador.</p>
+    <p>Certifique-se de atingir o ponto de interrupção em 800px ao redimensionar este quadro.</p>
+    
+    <div class="left">
+        <p>Menu Esquerdo</p>
+    </div>
+
+    <div class="main">
+        <p>Conteúdo Principal</p>
+    </div>
+
+    <div class="right">
+        <p>Conteúdo Correto</p>
+    </div>
+
+</body>
+</html>
