@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css avançado</title>
+    <style>
+        #grad1 {
+            height: 200px;
+            background-color: red;  /*Para navegadores que não suportão gradiente*/
+            background-image: linear-gradient(red, yellow);
+        }
+
+        #grad2 {
+            height: 200px;
+            background-color: red; /*Para navegadores que não suportão gradiente*/
+            background-image: linear-gradient(to right, red, yellow);
+        }
+
+        #grad3 {
+            height: 200px;
+            background-color: red; /*Para navegadores que não suportão gradiente*/
+            background-image: linear-gradient(to bottom right, red, yellow);
+        }
+
+        #grad4 {
+            height: 55px;
+            background-color: red; /*Para navegadores que não suportão gradiente*/
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Gradiente Linear - De Cima para Baixo</h1>
+    <p>Este gradiente linear começa vermelho na parte superior e passa para amarelo na parte inferior:</p>
+
+    <div id="grad1"></div>
+    <hr>
+
+    <h1>Gradiente Linear - Da Esquerda para a Direita</h1>
+    <p>Este gradiente linear começa vermelho à esquerda e passa para amarelo (à direita):</p>
+
+    <div id="grad2"></div>
+    <hr>
+
+    <h1>Gradiente Linear - Diagonal</h1>
+    <p>Este gradiente linear começa vermelho no canto superior esquerdo e passa para amarelo (no canto inferior direito):</p>
+
+    <div id="grad3"></div>
+    <hr>
+
+    <div id="grad4" style="text-align: center;margin:auto;color:#888888;font-size: 40px;font-weight:bold">Fundo de arco-íris</div>
+</body>
+</html>
