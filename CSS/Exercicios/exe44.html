@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferenças de transições</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: gray;
+            transition: width 2s;
+            color: whitesmoke;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        #div1{
+            transition-timing-function: linear;
+        }
+        
+        #div2{
+            transition-timing-function: ease;
+        }
+
+        #div3{
+            transition-timing-function: ease-in;
+        }
+        
+        #div4{
+            transition-timing-function: ease-out;
+        }
+
+        #div5{
+            transition-timing-function: ease-in-out;
+        }
+
+        div:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Propriedade da função de tempo de transição</h1>
+    <p>Passe o mouse sobre os elementos div abaixo para ver as diferentes curvas de velocidade:</p>
+
+
+    <div id="div1">Linear</div><br>
+    <div id="div2">Facilidade</div><br>
+    <div id="div3">Facilidade de Entrada</div><br>
+    <div id="div4">Facilidade de Saída</div><br>
+    <div id="div5">Facilidade de Entrada e Saída</div><br>
+</body>
+</html>
