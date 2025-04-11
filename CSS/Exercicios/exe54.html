@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: #f1f1f1;
+            color: #000;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .item1 {
+            grid-column: 1 / span 2;
+        }
+        .item2 {
+            grid-column: 3;
+            grid-row:  1/span 2;
+        }
+
+        .item5 {
+            grid-column: 1/ span 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Grid de cinco Itens</h1>
+    <p>Os elementos filhos diretos do contêiner de grade se tornam automaticamente itens de grade.</p>
+    <p>Os itens 1, 2 e 5 são definidos para abranger várias colunas ou linhas.</p>
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</body>
+</html>
